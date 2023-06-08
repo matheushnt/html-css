@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<h1>Imagens dinâmicas</h1>
+<p>Tente abrir esse site em vários dispositivos de tamanhos diferentes ou aumente e diminua o tamanho do seu navegador.
+</p>
+    <br>
+     <!-- Outra config. da tag PICTURE.
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    -->
+   
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>
+        Estou aprendendo a reproduzir áudios em HTML5.
+    </p>
+    <audio src="midia/kirwani-teental.mp3" controls>Áudio MP3</audio>
+    <!-- Existem atributos como preload, autoplay e controls -->
+    <!-- MP3 WAV OGG -->
+    <p>
+        Caso queira baixar o áudio, <a href="midia/kirwani-teental.mp3" download="midia/kirwani-teental.mp3" type="audio/mpeg" >clique aqui</a> para download.
+    </p>
+<body>
+    
+</body>
+</html>
