@@ -2,6 +2,80 @@
 
 /* Todas as demais mídias */
 
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: ... até 600px
+Celular: de 600px até 768px
+Tablet: 768 até 992
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+
+
+
+*/
+
 @media print {
-    
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+   body {
+    background-image: url(../imagens/back-print.jpg); /*Desnecessário*/
+   }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+       content: 'Essa impressão disponibilizada por Matheus Henrique'; 
+       text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+   
+   #phone { display: none; }
+   #tablet { display: none; }
+   #print { display: block; }
+   #pc { display: none; }
+   #tv { display: none; }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone { display: none; }
+    #tablet { display: block; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: block; }
+    #tv { display: none; }
+
+}
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
 }
