@@ -19,8 +19,16 @@ header > h1 {
     text-align: center;
 }
 
-menu {
+.material-icons {
+    background-color: #1b2e98;
+    color: white;
+    text-align: center;
     display: block;
+    cursor: pointer;
+}
+
+menu {
+    display: none;
 }
 
 menu > ul {
