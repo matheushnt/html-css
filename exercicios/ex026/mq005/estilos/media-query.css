@@ -12,3 +12,25 @@ Grandes telas: acima de 1200px
 
 */
 
+@media screen and (min-width: 768px) {
+    .material-icons {
+        display: none;
+    }
+
+    #itens {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    a {
+        border-radius: 10px;
+        margin: 5px ;
+    }
+
+    main {
+        width: 768px;
+    }
+}
